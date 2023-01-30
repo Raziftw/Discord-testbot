@@ -85,5 +85,8 @@ async def on_reaction_add(reaction, user):
             transcript_message = f"{message.created_at} [{message.author}] {message.content}"
             await transcript_channel.send(transcript_message)
         await reaction.message.channel.delete()
+print('please enter your token:')
 
-client.run('MTA2OTU0MDM5NDU2OTg0Njc5NQ.GStv8T.hbw_iHsgSvcMUXhSnn5DKcHeKGHCsOpYB_xssU')
+TOKEN=input()
+print(TOKEN)
+client.run(TOKEN)
